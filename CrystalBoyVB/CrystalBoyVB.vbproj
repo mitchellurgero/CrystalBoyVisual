@@ -46,6 +46,24 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalBoy.Core">
+      <HintPath>..\..\..\CrystalBoy_Assemblies\CrystalBoy.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalBoy.Core.Windows.Forms">
+      <HintPath>..\..\..\CrystalBoy_Assemblies\CrystalBoy.Core.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalBoy.Emulation">
+      <HintPath>..\..\..\CrystalBoy_Assemblies\CrystalBoy.Emulation.dll</HintPath>
+    </Reference>
+    <Reference Include="Rendering.Direct3D">
+      <HintPath>..\..\..\CrystalBoy_Assemblies\Rendering.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Rendering.GdiPlus">
+      <HintPath>..\..\..\CrystalBoy_Assemblies\Rendering.GdiPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Rendering.SlimDX">
+      <HintPath>..\..\..\CrystalBoy_Assemblies\Rendering.SlimDX.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -69,6 +87,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.vb" />
+    <Compile Include="EmulatedGameBoy.vb" />
+    <Compile Include="EmulationStatus.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +112,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NativeMethods.vb" />
+    <Compile Include="PluginInformation.vb" />
+    <Compile Include="Program.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
